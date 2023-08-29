@@ -137,7 +137,7 @@
 
   <main>
     <section id="nosotros" class="text-gray-600 body-font relative">
-      <div class="container px-5 pt-24 mx-auto grid grid-cols-2 justify-">
+      <div class="container px-5 pt-24 mx-auto grid lg:grid-cols-2 grid-cols-1 justify-">
         <div class="flex flex-col text-center w-full justify-center">
           <h2 class="text-xl text-primary-500 tracking-widest font-medium title-font mb-1">M & P CONFORT</h2>
           <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"> Realizamos instalaciones generales
@@ -145,48 +145,51 @@
             Realizamos mantenimiento preventivo y resolución de problemas técnicos.</p>
         </div>
 
-        <div class="m-auto">
-          <div id="controls-carousel" class="flex flex-col w-72" data-carousel="static">
+        <div class="m-auto w-full">
+          <div id="controls-carousel" class="flex flex-col w-96 w-full" data-carousel="static">
             <!-- Carousel wrapper -->
             <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
               <!-- Item 1 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="./img/iconos/aire_acondicionad.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src="img/nosotros/1.png" class="absolute block w-full rounded-lg -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <!-- Item 2 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                <img src="./img/iconos/aire_acondicionado2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src="img/nosotros/2.png" class="absolute block w-full rounded-lg -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <!-- Item 3 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="img/iconos/radiador.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src="img/nosotros/3.png" class="absolute block w-full rounded-lg -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <!-- Item 4 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="img/iconos/radiador.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src="img/nosotros/4.png" class="absolute block w-full rounded-lg -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <!-- Item 5 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="img/iconos/radiador.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src="img/nosotros/1.png" class="absolute block w-full rounded-lg -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
             </div>
             <!-- Slider controls -->
-            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/30 dark:bg-primary-800/30 group-hover:bg-primary/50 dark:group-hover:bg-primary-800/60 group-focus:ring-4 group-focus:ring-primary dark:group-focus:ring-primary-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-primary dark:text-primary-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
-                </svg>
-                <span class="sr-only">Previous</span>
-              </span>
-            </button>
-            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/30 dark:bg-primary-800/30 group-hover:bg-primary/50 dark:group-hover:bg-primary-800/60 group-focus:ring-4 group-focus:ring-primary dark:group-focus:ring-primary-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-primary dark:text-primary-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-                </svg>
-                <span class="sr-only">Next</span>
-              </span>
-            </button>
+            <div class="flex justify-center py-4">
+              <button type="button" class=" top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/30 dark:bg-primary-800/30 group-hover:bg-primary/50 dark:group-hover:bg-primary-800/60 group-focus:ring-4 group-focus:ring-primary dark:group-focus:ring-primary-800/70 group-focus:outline-none">
+                  <svg class="w-4 h-4 text-primary dark:text-primary-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+                  </svg>
+                  <span class="sr-only">Previous</span>
+                </span>
+              </button>
+              <button type="button" class=" top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/30 dark:bg-primary-800/30 group-hover:bg-primary/50 dark:group-hover:bg-primary-800/60 group-focus:ring-4 group-focus:ring-primary dark:group-focus:ring-primary-800/70 group-focus:outline-none">
+                  <svg class="w-4 h-4 text-primary dark:text-primary-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                  </svg>
+                  <span class="sr-only">Next</span>
+                </span>
+              </button>
+            </div>
+
           </div>
 
         </div>
