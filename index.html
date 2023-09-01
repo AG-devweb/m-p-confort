@@ -33,6 +33,9 @@
       darkMode: 'class',
       theme: {
         extend: {
+          screens: {
+            'xs': '475px',
+          },
           colors: {
             primary: {
               DEFAULT: '#3F4697',
@@ -286,7 +289,7 @@
             </p>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto">
+          <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-6 overflow-x-auto">
             <!-- Columna 1 -->
             <div class="p-2 flex flex-col items-center text-center">
               <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-primary-100 text-primary-500 mb-5 flex-shrink-0">
@@ -296,7 +299,7 @@
                 <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Efectivo</h2>
               </div>
             </div>
-            
+
             <!-- Columna 2 -->
             <div class="p-2 flex flex-col items-center text-center">
               <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-primary-100 text-primary-500 mb-5 flex-shrink-0">
@@ -306,7 +309,7 @@
                 <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Mercado Pago</h2>
               </div>
             </div>
-            
+
             <!-- Columna 3 -->
             <div class="p-2 flex flex-col items-center text-center">
               <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-primary-100 text-primary-500 mb-5 flex-shrink-0">
@@ -316,7 +319,7 @@
                 <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Tarjeta de Crédito/Debito</h2>
               </div>
             </div>
-            
+
             <!-- Columna 4 -->
             <div class="p-2 flex flex-col items-center text-center">
               <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-primary-100 text-primary-500 mb-5 flex-shrink-0">
@@ -327,7 +330,7 @@
               </div>
             </div>
           </div>
-          
+
         </div>
       </section>
 
