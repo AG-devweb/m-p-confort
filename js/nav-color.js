@@ -4,9 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
   navLinks.forEach(function(link) {
     link.addEventListener("click", function(event) {
       navLinks.forEach(function(link) {
-        link.classList.remove("activo");
+        link.classList.remove("text-primary-500");
+        link.classList.add("text-white");
       });
-      this.classList.add("activo");
+      this.classList.remove("text-white");
+      this.classList.add("text-primary-500");
     });
   });
 });

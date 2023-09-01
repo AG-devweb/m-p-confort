@@ -5,18 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>M&P Confort</title>
-  <!-- <link rel="stylesheet" href="./css/style.css"> -->
-  <link rel="stylesheet" href="./css/whatsapp-button.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Flowbite -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Kanit&display=swap" rel="stylesheet">
-
   <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Handlee&family=Kanit&display=swap" rel="stylesheet">
+
+  <!-- Animaciones CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <script>
     tailwind.config = {
@@ -104,7 +114,7 @@
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
           <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-neutral-800 md:bg-neutral-900 border-neutral-700">
             <li>
-              <a href="#home" class="block py-2 pl-3 pr-4 text-white bg-primary-700 rounded md:bg-transparent md:p-0 md:text-primary-500" aria-current="page">Home</a>
+              <a href="#hero" class="block py-2 pl-3 pr-4 rounded md:p-0 md:hover:text-primary-500 text-primary-500 hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-neutral-700">Inicio</a>
             </li>
             <li>
               <a href="#nosotros" class="block py-2 pl-3 pr-4 rounded md:p-0 md:hover:text-primary-500 text-white hover:bg-neutral-700 hover:text-white md:hover:bg-transparent border-neutral-700">Nosotros</a>
@@ -120,7 +130,7 @@
       </div>
     </nav>
 
-    <header class="relative flex items-center justify-center h-[28rem] mt-[113px] mb-12 overflow-hidden">
+    <header class="relative flex items-center justify-center h-[28rem] mt-[113px] mb-12 overflow-hidden" id="hero">
       <div class="relative z-30 p-5 px-5 sm:px-10 text-2xl text-white bg-primary-600 bg-opacity-70 rounded-xl">
         <h3 class="text-3xl sm:text-5xl text-white tracking-widest font-medium title-font mb-1 filter-none relative z-10" style="font-family: 'Grechen Fuemen', cursive; font-family: 'Kanit', sans-serif;">
           <div class="grid grid-cols-1 lg:grid-cols-3 text-center">
@@ -526,7 +536,12 @@
       const currentYear = new Date().getFullYear();
       document.getElementById("current-year").textContent = currentYear;
     </script>
+
+    <!-- Flowbite -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+
+    <script src="js/nav-color.js"></script>
+    <script src="js/animaciones.js"></script>
 </body>
 
 </html>
