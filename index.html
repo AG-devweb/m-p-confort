@@ -6,6 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>M&P Confort</title>
 
+  <link rel="icon" id="favicon" href="./img/favicon/m&p-dark.svg" type="image/png">
+  <style>
+    /* Estilos para el favicon en el modo claro */
+    @media (prefers-color-scheme: light) {
+      #favicon {
+        content: url('./img/favicon/m&p-dark.svg');
+      }
+    }
+
+    /* Estilos para el favicon en el modo oscuro */
+    @media (prefers-color-scheme: dark) {
+      #favicon {
+        content: url('./img/favicon/m&p-light.svg');
+      }
+    }
+  </style>
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -594,6 +611,24 @@
 
     <script src="js/nav-color.js"></script>
     <script src="js/animaciones.js"></script>
+
+    <script>
+      // JavaScript para cambiar el favicon en función del modo de color preferido
+      const favicon = document.getElementById('favicon');
+      const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    
+      function updateFavicon() {
+        if (darkModeMediaQuery.matches) {
+          favicon.href = './img/favicon/m&p-light.svg';
+        } else {
+          favicon.href = './img/favicon/m&p-dark.svg';
+        }
+      }
+    
+      // Actualizar el favicon cuando cambia el modo de color preferido
+      darkModeMediaQuery.addEventListener('change', updateFavicon);
+      updateFavicon(); // Llamar a la función inicialmente
+    </script>
 </body>
 
 </html>
